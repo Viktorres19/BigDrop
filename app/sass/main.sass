@@ -1,0 +1,549 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video 
+	margin: 0 
+	padding: 0
+	border: 0
+	outline: 0                               
+	vertical-align: baseline          
+	background: transparent     
+	font-size: 100%                     
+
+a                                       	     
+	margin: 0
+	padding: 0
+	font-size: 100%
+	vertical-align: baseline
+	background: transparent
+	outline: none
+	text-decoration: none
+	color: #767676
+
+table 						
+	border-collapse: collapse 
+	border-spacing: 0
+
+td, td img 
+	vertical-align: top			
+ 
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section 
+	display: block
+
+nav ul 
+	 list-style: none
+
+img
+	max-width: 100%
+
+html 
+	min-height: 100% 
+
+h1, h2, h3, h4, h5, h6
+	font-weight: normal
+
+.clr
+	clear: both
+
+.clearfix:after 
+    clear: both
+    content: ""
+    display: table
+/* --------------- end reset.css --------------- */
+/* --------------- style for main --------------- */
+body
+	font-family: 'Arimo', sans-serif
+	color: #767676
+	font-size: 14px 
+	background: #fff
+
+.container
+	max-width: 1005px
+	margin: 0 auto
+	padding: 0 10px
+	box-sizing: border-box
+/* end main */	
+
+
+.feedback-shadow
+	background: url(../img/bg-feedback-form.png)
+	width: 100%
+	height: 100%
+	z-index: 10000
+	position: fixed
+	display: none
+
+	.feedback-form
+		background: #fff
+		color: #535353
+		position: relative
+		text-align: center
+		margin: 25px auto
+		padding: 40px 60px 45px
+		width: 464px
+		box-sizing: border-box
+
+		.feedback-cross	
+			position: absolute
+			top: -20px
+			right: -20px
+
+		h2
+			text-transform: uppercase
+			font-size: 24px
+			margin-bottom: 25px
+
+		form input.subscribemail 
+			width: 342px
+			height: 40px
+			margin-bottom: 25px
+			padding: 0 10px
+			box-sizing: border-box
+			border: 1px solid #c3c3c3
+
+		form textarea
+			height: 140px
+			width: 342px
+			margin-bottom: 25px
+			padding: 10px 10px
+			box-sizing: border-box
+			border: 1px solid #c3c3c3
+
+		form input.subscribebutton
+			padding: 15px 38px
+			border-radius: 25px
+			color: #fff
+			background: #282c37
+			float: right
+			display: block	
+			border: none		
+
+		form p
+			text-align: left
+			margin-bottom: 5px
+
+			span
+				color: #c61015
+
+/* styles for header */	
+header .container
+	display: flex 	
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+	padding: 24px 10px 23px 10px
+	@media (max-width:950px)
+		padding: 15px 10px 15px 10px	
+
+	.header-center
+		width: 65%	
+
+		.call
+			float: right
+			list-style-type: none
+			font-size: 18px	
+
+	.header-right .feedback
+		padding: 15px 38px
+		border-radius: 25px
+		color: #fff
+		background: #fa917a
+		margin-left: 33px
+		text-transform: uppercase
+		display: block
+/* end header */			
+/* styles for menu */
+.menu-line .container nav a.menu-trigger
+	margin-right: 3px
+	display: none		
+	@media (max-width:780px)
+		display: block
+
+	img
+		border-radius: 5px
+		padding: 3px
+
+	img:hover
+		background: #fa917a
+
+.menu-line
+	background: #282c37
+	padding: 31px 0
+	@media (max-width:950px)
+		padding: 20px 0
+
+	.container
+		display: flex
+		justify-content: center
+		align-items: center
+		@media (max-width:780px)
+			display: block
+
+		nav ul
+			@media (max-width:780px)
+				display: none
+
+		nav ul li
+			border-left: 1px solid #424757	
+			float: left
+			@media (max-width:780px)
+				text-align: center
+				width: 100%
+
+			a
+				font-size: 15px
+				padding: 0px 47px
+				color: #fff
+				text-transform: uppercase
+				@media (max-width:950px)
+					padding: 0px 30px
+					@media (max-width:780px)
+	
+			a:hover
+				color: #fa917a
+
+		nav ul li:nth-child(1)
+			border-left: none
+/* end menu */	
+/* styles for slider-line */
+.slider-line
+	background: #cacaca
+
+.slider-line .bxslider li img 
+	width: 100%
+
+.slider-line .bx-wrapper
+	margin-bottom: 0px
+	-moz-box-shadow: none
+	-webkit-box-shadow: none
+	box-shadow: none
+	border: none
+	background: none
+
+.slider-line .bx-wrapper .bx-pager
+	position: absolute
+	bottom: 35px
+
+.bx-wrapper .bx-controls-direction a.bx-prev
+	background: url(../img/controls_prev.png) 0 0px no-repeat
+	width: 64px
+	height: 64px
+	background-size: cover
+	@media (max-width:950px)
+		width: 40px
+		height: 40px	
+
+.bx-wrapper .bx-controls-direction a.bx-next
+	background: url(../img/controls_next.png) 0px 0px no-repeat
+	width: 64px
+	height: 64px
+	background-size: cover
+	@media (max-width:950px)
+		width: 40px
+		height: 40px	
+
+.bx-wrapper .bx-controls-direction a.bx-next:hover
+	background-position: 0px 0
+
+.slider-line .bx-wrapper .bx-pager.bx-default-pager a 
+    background: #575d68
+    margin: 0 10px
+
+.slider-line .bx-wrapper .bx-pager.bx-default-pager a.active
+	background: #fff
+
+/* end slider-line */
+/* --styles for content-- */
+.content
+	padding-bottom: 137px
+	@media (max-width:780px)
+		padding-bottom: 0px
+/* breadcrumps */
+.content .container .breadcrumps
+	width: 100%
+	padding: 60px 0
+	@media (max-width:950px)
+		padding: 40px 0
+
+	ul li
+		float: left
+		padding: 0 25px 0 10px
+		list-style-image: url("../img/marker.png")
+		font-weight: 600
+
+		a 
+			color: #282c37
+			display: block
+			font-size: 16px
+
+		a:hover
+			text-decoration: underline
+
+		a.current
+			color: #a2a2a2
+
+	ul li:first-child
+		list-style-type: none	
+		list-style-image: none	
+		padding-left: 2px
+		font-weight: 600
+/* end breadcrumps */
+/* catalog */
+.content .container .catalog 
+	float: left
+	width: 20.7%
+
+	ul 
+		list-style-type: none
+
+		li 
+			line-height: 2
+
+			a 
+				color: #767676
+				font-size: 16px
+				@media (max-width:550px)
+					font-size: 14px
+
+			a:hover 
+				color: #fa917a	
+
+			a.active 
+				color: #fa917a
+
+			ul 
+				margin: 0 0 0 10px
+
+				li 
+					line-height: 2
+					background: url("../img/marker_dot.png") no-repeat
+					background-position: 0% 50% 
+					padding-left: 7px
+
+					a 
+						font-size: 14px
+						@media (max-width:550px)
+							font-size: 12px						
+
+					a:hover
+						color: #fa917a;
+						text-decoration: underline	
+
+					a.active
+						color: #fa917a;
+						text-decoration: underline
+
+				li.active 
+					background: url("../img/marker_dot1.png") no-repeat	
+					background-position: 0% 50% 
+/* end catalog */
+.content .container .catalog .price-list
+	margin-top: 81px	
+
+	a
+		display: block 
+
+		p
+			font-size: 16px
+			color: #fa917a
+			float: left
+			margin: 11px 0 0 12px
+
+		img
+			float: left	
+
+	a:hover p, a:hover img
+		box-shadow: 0px 10px 5px #e5e806, -0px -10px 5px #e5e806
+		transition:all 20s 0s					
+
+/* goods-news */
+.content .container .goods-news
+	padding-top: 4px
+	width: 79.3%
+	float: right
+	margin-bottom: 50px
+
+	.goods
+		border-bottom: 1px solid #a2a2a2	
+		padding-bottom: 65px
+		@media (max-width:780px)
+			padding-bottom: 10px
+
+		.flat-box
+			padding-left: 9px
+			margin-bottom: 30px
+			@media (max-width:780px)
+				margin-bottom: 0px
+
+			.flat
+				float: left
+				width: 31.5%
+				border: 1px solid #e4e4e4
+				border-radius: 3px
+				box-sizing: border-box
+				margin: 0 2.7% 20px 0
+				@media (max-width:780px)
+					width: 48%
+					margin: 0 1% 10px 1%
+					@media (max-width:550px)
+						width: 98%
+						margin: 0 1% 10px 1%
+
+				.photo-text
+					border-bottom: 1px solid #e4e4e4
+					text-align: center	
+					padding-bottom: 10px
+
+					a
+						display: block
+						margin: 23px 0 19px 0		
+
+					p.text
+						font-size: 16px
+						color: #767676
+						line-height: 1.6
+						padding: 0 40px	
+						@media (max-width:780px)
+							padding: 0 20px	
+
+				.pb
+					padding: 12px 17px	
+
+					.price
+						float: left
+						color: #444
+						font-size: 24px
+						font-weight: bold	
+
+					.basket-btn
+						float: right							
+			.flat:nth-child(3n)
+				margin-right: 0%
+				@media (max-width:780px)
+					margin-right: 1%	
+/* end goods-news */
+/* styles for paginate */
+.content .container .goods-news	.paginate
+		text-align: center 
+		margin-top: -2px
+	  
+		ul
+			list-style: none
+			margin: 0
+			padding-left: 33px
+			text-align: center
+
+			li
+				display: inline
+
+				a
+					font-size: 14px
+					color: #767676
+					margin: 14px 7px
+					padding: 5px 1px
+					display: inline-block
+					text-decoration: none
+
+				a.pagin
+					font-size: 24px
+					font-weight: bold
+					color: #282c37
+
+				a:hover
+					font-weight: bold
+
+				a.active 
+				  color: #fa917a
+				  font-size: 18px
+				  border-bottom: 2px solid #fa917a
+  
+.my-flex-container 
+	padding-top: 45px
+	display: flex 
+	justify-content: space-between
+	align-items: center
+	font-size: 14px
+	line-height: 1.8
+	@media (max-width:600px)
+		display: block
+		text-align: center
+
+	.my-flex-block 
+		width: 47.5%
+		@media (max-width:600px)
+			width: 90%
+			
+/* end content */	
+/* styles for footer */
+footer
+	background: #282c37
+	padding-top: 34px
+	@media (max-width:780px)
+		padding-top: 0px
+
+footer .container .menu-footer
+		padding: 30px 0
+		display: flex 
+		justify-content: center
+		align-items: center	
+		@media (max-width:780px)
+			padding: 15px 0
+
+
+footer .container .menu-footer ul li
+	float: left
+
+	a
+		font-size: 15px
+		padding: 0px 32px
+		color: #fff
+		text-transform: uppercase
+		@media (max-width:780px)
+			padding: 0px 5px
+			font-size: 12px		
+
+	a:hover
+		color: #fa917a
+
+
+footer .container .social-footer
+	padding: 17px 0
+	display: flex 
+	justify-content: center
+	align-items: center	
+
+	ul li 
+		float: left
+
+		a 
+			font-size: 15px
+			padding: 0px 19px
+			color: #fff
+			text-transform: uppercase
+			@media (max-width:780px)
+				padding: 0px 10px
+
+			i.fa 
+				color: #fff	
+				font-size: 24px
+
+			i.fa:hover
+				color: #fa917a
+	
+		a:hover 
+			color: #fa917a
+
+
+
+footer .container .copyright-footer
+	padding: 27px 0 70px 0
+	color: #a2a2a2
+	display: flex 
+	justify-content: center
+	align-items: center
+	@media (max-width:780px)
+		padding: 27px 0 27px 0
+
+@import "media" // Всегда в конце
